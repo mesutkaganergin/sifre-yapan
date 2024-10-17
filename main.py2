@@ -1,0 +1,10 @@
+import random
+sifre="+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+soru=int(input("parolanızın uzunluğu ne kadar olmalı?"))
+sifreler=""
+
+for i in range (soru):
+    sifreler += random.choice(sifre)
+
+print("Şifreniz", sifreler)
